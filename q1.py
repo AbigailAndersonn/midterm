@@ -6,3 +6,9 @@
 
 def computeMinimumPayment( balance ):
     #TODO write code inside this function that achieves the functionality described above
+    if ( (balance * 0.021) > 10):
+        return balance * 0.021
+    elif balance < 10:
+        return balance
+    else:
+        return 10
